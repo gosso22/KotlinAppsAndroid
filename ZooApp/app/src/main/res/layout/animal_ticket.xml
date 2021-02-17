@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/secondaryColor"
+    android:orientation="horizontal"
+    android:padding="5pt">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivAnimal"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            app:srcCompat="@drawable/baboon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Baboon"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Baboon lives in a zoo on trees and likes to jump" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
