@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">My Notes</string>
+    <string name="enter_tile">Enter tile</string>
+    <string name="enter_note_content">Enter note content</string>
+    <string name="add_note">Add Note</string>
+</resources>

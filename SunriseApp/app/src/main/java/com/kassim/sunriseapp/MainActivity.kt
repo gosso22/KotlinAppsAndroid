@@ -105,9 +105,7 @@ class MainActivity : AppCompatActivity() {
 
         var city = binding.etCityName.text.toString()
 
-        // We are using the service from https://openweathermap.org/ you can register and get the api key from their website
-
-        val url= "https://api.openweathermap.org/data/2.5/weather?q=$city&appid=<<Remove the double <> and insert your api key here >>"
+        val url= "https://api.openweathermap.org/data/2.5/weather?q=$city&appid=c9ae45752e423a4761900528d51eb4e3"
 
         WeatherAsync().execute(url)
 

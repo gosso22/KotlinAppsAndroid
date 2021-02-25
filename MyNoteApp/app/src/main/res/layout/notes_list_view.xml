@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5pt"
+        android:background="@drawable/background_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="@color/dark_primary_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNotes"
+            android:paddingLeft="10pt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notes is a good helper to manage your schedules and notes. It gives you a quick and simple notepad editing experience when you write notes, memo, email, message, shopping list and to do list. It makes to take a note easier than any other notepad and memo apps. You also can cloud sync notes to the Google task. Let your notes more simpler and securer." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/buEdit"
+                android:layout_width="15pt"
+                android:layout_height="15pt"
+                android:layout_marginEnd="5pt"
+                android:background="@drawable/edit_note"
+                android:backgroundTint="@color/secondary_color" />
+
+            <Button
+                android:id="@+id/buDelete"
+                android:layout_width="15pt"
+                android:layout_height="15pt"
+                android:background="@drawable/delete_note"
+                android:onClick="deleteNote" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

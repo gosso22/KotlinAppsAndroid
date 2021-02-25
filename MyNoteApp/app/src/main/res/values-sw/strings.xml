@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Notisi</string>
+    <string name="enter_tile">Weka kichwa cha habari</string>
+    <string name="enter_note_content">Andika notisi zako</string>
+    <string name="add_note">Hifadhi</string>
+</resources>
