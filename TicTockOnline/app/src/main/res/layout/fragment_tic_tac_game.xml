@@ -1,14 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#D3D3D3"
     android:layout_height="match_parent"
-    tools:context=".TicTacGame">
+    android:layout_width="match_parent"
+    tools:context=".MainActivity">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/etOtherEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3pt"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Other player email"
+            android:inputType="textEmailAddress" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3pt"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:text="request" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/dark_green"
+            android:text="accept" />
+    </LinearLayout>
+
+    <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="#D3D3D3"
+        android:gravity="center">
 
-</FrameLayout>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5pt"
+            android:gravity="center">
+
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@color/blue"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_oneWins"
+                    android:layout_width="40pt"
+                    android:layout_height="20pt"
+                    android:layout_marginRight="5pt"
+                    android:text="Player 1 Won 0"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_green"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_twoWins"
+                    android:layout_width="40pt"
+                    android:layout_height="20pt"
+                    android:text="Player 2 Won 0"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3pt"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bu1"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_marginLeft="3pt"
+                android:background="#f9f9f9" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bu2"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_marginLeft="3pt"
+                android:background="#F9F9F9" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bu3"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_marginLeft="3pt"
+                android:background="#F9F9F9" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3pt"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bu4"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_marginLeft="3pt"
+                android:background="@color/white_background" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bu5"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_marginLeft="3pt"
+                android:background="@color/white_background" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bu6"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_marginLeft="3pt"
+                android:background="@color/white_background" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3pt"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bu7"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_marginLeft="3pt"
+                android:background="@color/white_background" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bu8"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_marginLeft="3pt"
+                android:background="@color/white_background" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bu9"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_marginLeft="3pt"
+                android:background="@color/white_background" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

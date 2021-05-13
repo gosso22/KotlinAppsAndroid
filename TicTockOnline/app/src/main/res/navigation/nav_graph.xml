@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
 
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.kassim.tictockonline.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_ticTacGame"
+            app:destination="@id/ticTacGame" />
+        <argument
+            android:name="username"
+            app:argType="string"
+            android:defaultValue="Player" />
+    </fragment>
+    <fragment
+        android:id="@+id/ticTacGame"
+        android:name="com.kassim.tictockonline.TicTacGame"
+        android:label="fragment_tic_tac_game"
+        tools:layout="@layout/fragment_tic_tac_game" >
+        <argument
+            android:name="username"
+            app:argType="string" />
+    </fragment>
 </navigation>
