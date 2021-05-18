@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/work/MyProjects/KotlinAppsAndroid/TicTockOnline/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_tic_tac_game.xml",
+        "source": "/work/MyProjects/KotlinAppsAndroid/TicTockOnline/app/src/main/res/layout/fragment_tic_tac_game.xml"
+    },
+    {
+        "merged": "/work/MyProjects/KotlinAppsAndroid/TicTockOnline/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/work/MyProjects/KotlinAppsAndroid/TicTockOnline/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/work/MyProjects/KotlinAppsAndroid/TicTockOnline/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_login.xml",
+        "source": "/work/MyProjects/KotlinAppsAndroid/TicTockOnline/app/src/main/res/layout/fragment_login.xml"
+    }
+]

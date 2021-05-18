@@ -1,0 +1,8 @@
+com/kassim/tictockonline/databinding/FragmentTicTacGameBinding.java
+ com.kassim.tictockonline.databinding.FragmentTicTacGameBinding
+com/kassim/tictockonline/databinding/ActivityMainBinding.java
+ com.kassim.tictockonline.databinding.ActivityMainBinding
+com/kassim/tictockonline/BuildConfig.java
+ com.kassim.tictockonline.BuildConfig
+com/kassim/tictockonline/databinding/FragmentLoginBinding.java
+ com.kassim.tictockonline.databinding.FragmentLoginBinding
